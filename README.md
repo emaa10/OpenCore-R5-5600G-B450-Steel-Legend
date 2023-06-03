@@ -14,3 +14,15 @@
 1. Change SMBios using [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS) (I used MacPro7,1 because of Navi 21 GPU)
     1. change MLB, SystemSerialNumber, ROM and SystemUUID
 2. Update kexts to your needs ([Guide](https://dortania.github.io/OpenCore-Install-Guide/ktext.html))
+3. Update config.plist using Propertree (⌘ + Shift + R)
+4. If running into problems, add `-v` to your boot-args to display log on screen
+
+## Current Problems
+- GPU displays image only after ~5 minutes
+- Apple ID not working (Connectivity error)
+
+## What's working?
+- Shutdown
+- Restart
+- GPU acceleration
+more tests coming soon
