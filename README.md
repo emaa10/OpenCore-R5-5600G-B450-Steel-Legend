@@ -18,11 +18,15 @@
 4. If running into problems, add `-v` to your boot-args to display log on screen
 
 ## Current Problems
-- GPU displays image only after ~5 minutes
-- Apple ID not working (Connectivity error)
+- ~~GPU displays image only after ~5 minute~~
+    ->  fixed by adding `-wegnoigpu` boot arg
+- ~~Apple ID not working (Connectivity error)~~
+    -> fixed by adding `PciRoot(0x0)/Pci(0x2,0x1)/Pci(0x0,0x2)/Pci(0x4,0x0)/Pci(0x0,0x0)` DeviceProperty entry to mark en0 as builtin (read the [dortania guide](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#fixing-en0) for a how-to)
 
 ## What's working?
 - Shutdown
 - Restart
 - GPU acceleration
-more tests coming soon
+- WiFi (only through itlwm.kext, otherwill willl result in random kernel panics)
+- Apple ID (requires en0 to be marked as built-in, see the dortania guide if you run into problems)
+- Dual boot with windows
