@@ -1,4 +1,6 @@
 # Opencore Ryzen 5 5600G, ASRock B450
+Current OC Version: v0.9.4
+Current macOS Version: 13.5
 ## Hardware
 - CPU: Ryzen 5 5600G
 - GPU: MSI RX 6600
